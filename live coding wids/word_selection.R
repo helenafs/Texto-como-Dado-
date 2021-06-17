@@ -1,9 +1,10 @@
+#aula: https://www.youtube.com/watch?v=ECwPKWnmmc4&ab_channel=WiDSSalvador 
 require(stringr)
 require(readr)
 require(dplyr)
 require(tidyr)
 
-df <-  read_csv("Mestrado/Dissertacao/base_de_dados/base_final.csv")
+df <- read.csv("C:\\Users\\helen\\Documents\\Mestrado\\1_Monografia\\Texto-como-Dado-\\live coding wids\\base_reduzida.csv")
 
 df$keyword <- str_replace_all(df$keyword,"\n", " ")
 df$keyword <- str_replace_all(df$keyword,"[[:digit:]]", " ")
